@@ -19,12 +19,20 @@ function verdeelTaken() {
 
     let aantal = parseInt(prompt('Hoeveel leden?'))
 
-    for (let i = 0; i < aantal; i++) {
-        let naam = prompt('Naam lid')
+    if (aantal > taken.length) {
+        alert(`Er zijn maar ${taken.length} taken beschikbaar.`)
+        aantal = taken.length
+    }
 
+    for (let i = 0; i < aantal; i++) {
+        let naam = ''
+        while (!naam || naam.trim() === '') {
+            naam = prompt(`Naam lid ${i + 1}:`)
+            if (naam === null) return // User cancelled
+        }
         let menu = 'Kies taak uit menu: \n'
         taken.forEach((taak, index) => {
-            menu += `${index + 1}: ${taak}\n`
+            menu += `${index + 1}   : ${taak}\n`
         })
 
         let gekozenNummer = parseInt(prompt(menu)) - 1
