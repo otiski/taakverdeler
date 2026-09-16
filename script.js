@@ -1,3 +1,9 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const h1 = document.getElementById('h1')
+    let gekozenClub = localStorage.getItem('Club')
+    h1.textContent = gekozenClub
+})
+
 function verdeelTaken() {
     let taken = [
         'Balken leggen',

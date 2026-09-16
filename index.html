@@ -3,12 +3,23 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Taak verdeler</title>
+        <title>inlog</title>
+        <link rel="stylesheet" href="styleindex.css" />
     </head>
     <body>
-        <h2>Taakverdeler</h2>
-        <button onclick="verdeelTaken()">Start verdelen</button>
-        <ul id="resultaat"></ul>
-        <script src="script.js"></script>
+        <div id="indexbox">
+            <h1>Kies je club</h1>
+            <select name="clubs" id="clubs">
+                <option value="Broechem">Broechem</option>
+                <option value="Heist-Op-Den-Berg">Heist-Op-Den-Berg</option>
+                <option value="Itegem">Itegem</option>
+                <option value="Oelegem">Oelegem</option>
+                <option value="Pulderbos">Pulderbos</option>
+                <option value="Zoersel">Zoersel</option>
+            </select>
+            <button onclick="gaNaarVerdeler()">Ga naar verdeler</button>
+        </div>
+
+        <script src="index.js"></script>
     </body>
 </html>

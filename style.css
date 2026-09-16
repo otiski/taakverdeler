@@ -1,0 +1,18 @@
+#box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#btn {
+    background-color: #8fc63f;
+    border: none;
+    border-radius: 15px;
+    padding: 25px;
+    font-size: large;
+    color: white;
+}
+h2 {
+    font-family: sans-serif;
+}
